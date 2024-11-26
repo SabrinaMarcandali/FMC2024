@@ -1,0 +1,61 @@
+
+
+library(readr)
+
+
+dados <- read_csv("C:\Users\Administrador\meu-projeto\Pratica R\Taxas de Rendimento Escolar.csv")
+dados <- dados %>%
+  filter(!is.na(A))
+
+dados <- read_csv("C:/Users/Administrador/meu-projeto/Pratica R/Taxas de Rendimento Escolar.csv")
+head(dados)
+# Verificar se o arquivo existe no caminho especificado
+file.exists("C:/Users/Administrador/meu-projeto/Pratica R/Taxas de Rendimento Escolar.csv")
+library(tidyverse)
+
+file.exists("C:/Users/Administrador/meu-projeto/Pratica R/Taxas de Rendimento Escolar.csv")
+
+dados <- read.csv("C:/Users/Administrador/meu-projeto/Pratica R/Taxas de Rendimento Escolar.csv")
+
+names(dados)
+library(ggplot2)
+
+
+ggplot(dados_long, aes(x = Serie, y = Taxa_Aprovacao, fill = Regiao)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Taxa de Aprovação por Série e Região",
+       x = "Série",
+       y = "Taxa de Aprovação (%)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  
+install.packages("ggplot2")
+
+search()
+
+ggplot(dados_long, aes(x = Serie, y = Taxa_Aprovacao)) +
+  geom_bar(stat = "identity")
+
+print(ggplot(dados_long, aes(x = Serie, y = Taxa_Aprovacao, fill = Regiao)) +
+        geom_bar(stat = "identity", position = "dodge") +
+        labs(title = "Taxa de Aprovação por Série e Região",
+             x = "Série",
+             y = "Taxa de Aprovação (%)") +
+        theme_minimal() +
+        theme(axis.text.x = element_text(angle = 45, hjust = 1)))
+      dev.off()
+      head(dados_long)
+      str(dados_long)
+      str(dados_long)
+# Verificar se dados_long existe
+exists("dados_long")
+
+# Verificar quantas linhas e colunas existem em dados_long
+dim(dados_long)
+# Verificar a estrutura do dataframe
+str(dados_long)
+# Instalar o pacote tidyr, se necessário
+install.packages("tidyr")
+
+# Carregar o pacote
+library(tidyr)
+
